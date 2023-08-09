@@ -34,7 +34,9 @@ function Card({ job, selected }: { job: Job; selected?: boolean }) {
             <div>
               <p className="text-xl font-bold">{job.role}</p>
               <div className="flex items-center">
-                <p className="font-bold text-green-500 mr-5">{job.postTime}</p>
+                <p className="font-bold text-green-500 mr-5 whitespace-nowrap">
+                  {job.postTime}
+                </p>
                 <BiSolidMap />
                 <p className="ml-1 text-gray-500">{job.location}</p>
               </div>
